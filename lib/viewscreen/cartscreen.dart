@@ -1,4 +1,5 @@
 import 'package:exam_app_meet/viewscreen/homescreen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../uitels/color.dart';
 import '../uitels/list.dart';
@@ -32,10 +33,11 @@ class _CartScreenState extends State<CartScreen> {
             ],
           ),
           appBar: AppBar(
+            backgroundColor: Colors.black87,
             title: Text(
               'Cart',
               style:
-              TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
           backgroundColor: Color(0xffFAFAFA),
@@ -90,7 +92,7 @@ class _CartScreenState extends State<CartScreen> {
                                   height: 40,
                                   width: 100,
                                   decoration: BoxDecoration(
-                                      color: colormeet,
+                                      color: Colors.black12,
                                       borderRadius:
                                       BorderRadius.circular(20)),
                                   child: Row(
@@ -102,12 +104,7 @@ class _CartScreenState extends State<CartScreen> {
                                             listmeetcart[index]['qu']--;
                                           });
                                         },
-                                        child: Text(
-                                          '<',
-                                          style: TextStyle(
-                                            color: Colors.red,
-                                            fontSize: 30,),
-                                        ),
+                                        child: Icon(CupertinoIcons.minus_circle_fill)
                                       ),
                                       Text(
                                         '${listmeetcart[index]['qu']}',
@@ -121,12 +118,7 @@ class _CartScreenState extends State<CartScreen> {
                                               listmeetcart[index]['qu']++;
                                             });
                                           },
-                                          child: Text(
-                                            '>',
-                                            style: TextStyle(
-                                                color: Colors.black,
-                                                fontSize: 30),
-                                          )),
+                                          child: Icon(CupertinoIcons.add_circled_solid)),
 
                                     ],
                                   ),
