@@ -44,7 +44,7 @@ class _ProductscreenState extends State<Productscreen> {
               children: [
                 Row(
                   children: [
-                   SizedBox(width: 30,),
+                   SizedBox(width: 30,height: 10,),
                     Text('Discover',style: TextStyle(color: colormeet,fontWeight: FontWeight.bold,fontSize: 40)),
 
                     Spacer(),
@@ -69,9 +69,9 @@ class _ProductscreenState extends State<Productscreen> {
                 ), //top logo butomn
 
                 Container(
-                    width: 500,
+                    width:150,
                     height: 65,
-                    margin: EdgeInsets.fromLTRB(30, 20, 20, 0),
+                    margin: EdgeInsets.fromLTRB(0, 20, 190, 0),
                     child: Text.rich(
                             TextSpan(
                               text: "Hii..  MeetR panchal",
@@ -85,7 +85,7 @@ class _ProductscreenState extends State<Productscreen> {
                 Row(children: [
                   Container(
                     height: 50,
-                    width: 290,
+                    width: 200,
                     margin: EdgeInsets.fromLTRB(30, 0, 40, 20),
                     decoration: BoxDecoration(
                         color: Color(0xFFF5F6FA),
@@ -100,7 +100,7 @@ class _ProductscreenState extends State<Productscreen> {
                   Container(
                     height: 50,
                     width: 50,
-                    margin: EdgeInsets.fromLTRB(0, 0, 0, 20),
+                    margin: EdgeInsets.fromLTRB(40, 0, 0, 20),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15.5),
                       color: colormeet,
@@ -261,7 +261,7 @@ class _ProductscreenState extends State<Productscreen> {
                               },
                               child: Image.asset(
                                 listmeet1[index]["image"],
-                                height: 190,
+                                height: 170,
                                 width: 190,
                               ),
                             ),
@@ -294,7 +294,7 @@ class _ProductscreenState extends State<Productscreen> {
                   itemBuilder: (BuildContext context, int index) {
                     return GridTile(
                       child: Container(
-                        height: 257,
+                        height: 260,
                         width: 160,
                         decoration: BoxDecoration(
                             color: Colors.black12,
@@ -322,12 +322,12 @@ class _ProductscreenState extends State<Productscreen> {
                                 );
                               },
                               child: Container(
-                                height: 190,
+                                height: 170,
                                 width: 190,
                                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
                                 child: Image.asset(
                                     listmeet1[index]["image"],fit: BoxFit.fitHeight,
-                                    height: 190,
+                                    height: 150,
                                     width: 190,
                                   ),
                               ),

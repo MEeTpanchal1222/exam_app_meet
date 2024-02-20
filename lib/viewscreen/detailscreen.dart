@@ -72,7 +72,7 @@ class Productview extends StatelessWidget {
               children: [
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 20),
-              width: 250,
+              width: 230,
               height: 100,
               child: Image.asset('assest/page2/img_2.png'),
             ),
